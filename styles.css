@@ -47,6 +47,14 @@
   font-size: 1.2em;
 }
 
+.container-img-background {
+  background-image: url("https://anakin022.files.wordpress.com/2020/01/godzilla_banner2.jpg?w=1200&h=400&crop=1");
+  height: 20em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+
 .card {
   padding: 1.5em;
   box-shadow: 1px 2px 0 rgba(1, 0, 0, 0.05);
@@ -207,10 +215,10 @@ textarea {
 
 @media only screen and (max-width: 600px) {
   * {
-    background-color: darkblue;
+    background-color: rgb(34, 0, 0);
   }
   .main-color {
-    background-color: darkblue;
+    background-color: rgb(34, 0, 0);
   }
   h1 {
     font-weight: 700;
