@@ -66,6 +66,7 @@
   border-radius: 0.3em;
   width: 350px;
   height: 480px;
+  z-index: 1;
 }
 
 .img-card {
@@ -211,6 +212,25 @@ textarea {
   filter: grayscale(0%);
 }
 
+.animate-text {
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 2%;
+    width: 100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    width: 100%;
+    opacity: 100%;
+  }
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -291,4 +311,49 @@ picture:hover {
   transition-property: filter;
   transition-duration: 0.5s;
   transition-delay: 0.1s; */
+}
+
+.grid-container {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: 20em 20em 20em;
+  grid-template-rows: 10em 10em;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.grid-item {
+  display: flex;
+  border: 1px solid red;
+  border-radius: 0.3em;
+  align-items: center;
+  justify-content: center;
+}
+
+#one {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: center;
+  padding: 1em;
+}
+
+#two {
+  grid-column: 3;
+  grid-row: 1 / span 4;
+  text-align: center;
+  padding: 1em;
+}
+
+#three {
+  grid-column: 1;
+  grid-row: 2 / span 3;
+  text-align: center;
+  padding: 1em;
+}
+
+#four {
+  grid-column: 2;
+  grid-row: 2 / span 3;
+  text-align: center;
+  padding: 1em;
 }
