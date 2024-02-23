@@ -176,6 +176,7 @@ a:hover {
 input {
   background-color: white;
   border-radius: 0.3em;
+  height: 1.5em;
 }
 
 textarea {
@@ -258,18 +259,36 @@ ul.a {
   list-style-position: outside;
 }
 
+input[type="submit"],
+[type="reset"] {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  height: 2em;
+
+  transition: background-color 0.5s ease-in, color 0.5s linear;
+}
+
 input[type="submit"]:hover,
 [type="reset"]:hover {
   background-color: red;
+  color: white;
+  /* Commented for self documentation ---
   transition-property: background-color;
   transition-duration: 1s;
-  transition-delay: 0.5s;
+  transition-delay: 0.5s; */
 }
 
+img,
+picture {
+  filter: grayscale(100%);
+
+  transition: filter 0.3s ease-in;
+}
 img:hover,
 picture:hover {
   filter: grayscale(0%);
+  /* Commented for self documentation ---
   transition-property: filter;
   transition-duration: 0.5s;
-  transition-delay: 0.1s;
+  transition-delay: 0.1s; */
 }
