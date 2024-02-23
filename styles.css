@@ -190,10 +190,19 @@ textarea {
   margin-bottom: 0.5em;
 }
 
+.img-desktop {
+  filter: grayscale(100%);
+}
+
+.img-desktop:hover {
+  filter: grayscale(0%);
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 600px) {
