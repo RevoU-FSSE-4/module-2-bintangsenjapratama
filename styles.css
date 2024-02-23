@@ -48,11 +48,15 @@
 }
 
 .container-img-background {
-  background-image: url("https://anakin022.files.wordpress.com/2020/01/godzilla_banner2.jpg?w=1200&h=400&crop=1");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 235, 235, 0),
+      rgba(0, 89, 255, 0.418)
+    ),
+    url("https://anakin022.files.wordpress.com/2020/01/godzilla_banner2.jpg?w=1200&h=400&crop=1");
   height: 20em;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
 }
 
 .card {
@@ -215,10 +219,10 @@ textarea {
 
 @media only screen and (max-width: 600px) {
   * {
-    background-color: rgb(34, 0, 0);
+    background-color: rgb(34, 2, 2);
   }
   .main-color {
-    background-color: rgb(34, 0, 0);
+    background-color: rgb(34, 2, 2);
   }
   h1 {
     font-weight: 700;
@@ -252,4 +256,20 @@ textarea {
 ul.a {
   list-style-type: square;
   list-style-position: outside;
+}
+
+input[type="submit"]:hover,
+[type="reset"]:hover {
+  background-color: red;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+
+img:hover,
+picture:hover {
+  filter: grayscale(0%);
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
 }
