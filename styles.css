@@ -358,21 +358,21 @@ picture:hover {
 
 #two {
   grid-column: 3;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 2;
   text-align: center;
   padding: 1em;
 }
 
 #three {
   grid-column: 1;
-  grid-row: 2 / span 3;
+  grid-row: 2;
   text-align: center;
   padding: 1em;
 }
 
 #four {
   grid-column: 2;
-  grid-row: 2 / span 3;
+  grid-row: 2;
   text-align: center;
   padding: 1em;
 }
