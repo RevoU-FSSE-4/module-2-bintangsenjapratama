@@ -66,7 +66,6 @@
   border-radius: 0.3em;
   width: 350px;
   height: 480px;
-  z-index: 1;
 }
 
 .img-card {
@@ -205,7 +204,11 @@ textarea {
 }
 
 .img-desktop {
+  display: flex;
+  justify-content: center;
   filter: grayscale(100%);
+  width: 100%;
+  height: auto;
 }
 
 .img-desktop:hover {
@@ -316,10 +319,13 @@ picture:hover {
 .grid-container {
   margin-top: 3em;
   display: grid;
-  grid-template-columns: 20em 20em 20em;
-  grid-template-rows: 10em 10em;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   justify-content: center;
   gap: 0.5em;
+  width: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .grid-item {
@@ -328,6 +334,19 @@ picture:hover {
   border-radius: 0.3em;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+
+  transition: background-color 0.5s ease-in, color 0.5s linear,
+    font-weight 0.5s linear;
+}
+
+.grid-item:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
 #one {
