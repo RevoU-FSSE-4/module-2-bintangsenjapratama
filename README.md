@@ -1,6 +1,6 @@
 # Godzilla Showdown
 
-Visit site here : https://godzilla-week03-bintang-v05.netlify.app/
+Visit site here : https://godzillaz.shop/
 
 Welcome to Godzilla Showdown! This website repository showcases various Godzilla-type monsters and highlights their incredible power and ability. Whether you are a fan of giant monsters or just curious about the dynamics in the madness of Godzilla universe, this is the place for you.
 
